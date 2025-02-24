@@ -45,9 +45,9 @@ const collectionMint = generateSigner(umi);
 
 const transcation = await createNft(umi, {
   mint: collectionMint,
-  name: "🐖 Zhu's Collection",
-  symbol: "ZCL",
-  uri: "https://raw.githubusercontent.com/FromTX2SJ/metaplex-umi-nft/refs/heads/main/metadata.json?token=GHSAT0AAAAAAC7GQCS24Z6ULVUG7RZ6ITW6Z54GQAA",
+  name: "🐖 Zhu's",
+  symbol: "ZCS",
+  uri: "https://github.com/FromTX2SJ/metaplex-umi-nft/blob/main/metadata.json",
   sellerFeeBasisPoints: percentAmount(0.01), // 5%
   isCollection: true, // Mark as a collection NFT
 });
