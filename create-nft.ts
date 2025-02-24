@@ -42,7 +42,7 @@ umi.use(keypairIdentity(umiUser));
 console.log("Set up Umi instance for user......");
 
 const collectionAddress = publicKey(
-  "6WxNeqxceQqfxumKK86VP4RVopA17EHHnvyzZ3VtoQiY"
+  "8m6fPpGqmQLFcVrUf7upLLZYGYRYLADoZxYguXczxS6L"
 );
 
 console.log(`creatig NFT......`);
@@ -51,11 +51,11 @@ const nftMint = generateSigner(umi);
 
 const transcation = await createNft(umi, {
   mint: nftMint,
-  name: "My NFT",
-  symbol: "TNT",
-  uri: "https://raw.githubusercontent.com/FromTX2SJ/Lenora-Protocol/refs/heads/main/metadata.json",
+  name: "🐖 Zhu's 肚脐眼 ",
+  symbol: "ZDQ",
+  uri: "https://raw.githubusercontent.com/FromTX2SJ/metaplex-umi-nft/refs/heads/main/image.png",
   sellerFeeBasisPoints: percentAmount(0.05), // 5%
-  collection: { key: collectionAddress, verified: false }, // Assign to the  created collection
+  collection: { key: collectionAddress, verified: false }, // Assign to the created collection
 });
 
 await transcation.sendAndConfirm(umi);

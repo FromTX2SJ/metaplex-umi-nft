@@ -45,10 +45,10 @@ const collectionMint = generateSigner(umi);
 
 const transcation = await createNft(umi, {
   mint: collectionMint,
-  name: "Test Collection",
-  symbol: "TCOL",
-  uri: "https://raw.githubusercontent.com/FromTX2SJ/Lenora-Protocol/refs/heads/main/metadata.json",
-  sellerFeeBasisPoints: percentAmount(0.05), // 5%
+  name: "🐖 Zhu's Collection",
+  symbol: "ZCL",
+  uri: "https://raw.githubusercontent.com/FromTX2SJ/metaplex-umi-nft/refs/heads/main/metadata.json?token=GHSAT0AAAAAAC7GQCS24Z6ULVUG7RZ6ITW6Z54GQAA",
+  sellerFeeBasisPoints: percentAmount(0.01), // 5%
   isCollection: true, // Mark as a collection NFT
 });
 
